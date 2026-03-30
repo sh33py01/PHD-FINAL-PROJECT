@@ -114,7 +114,7 @@ HTML = """<!DOCTYPE html>
 <body>
 <div class="container">
     <div class="card">
-        <h1>🔬 FPGA Internal Sensor Oscilloscope</h1>
+        <h1>FPGA Internal Sensor Oscilloscope</h1>
         <p>Reads real temperature and voltage rails from the Artix‑7.</p>
         <div class="btn-info">
             <span class="btn">BTN0: Temp</span>
@@ -143,7 +143,7 @@ HTML = """<!DOCTYPE html>
     </div>
 </div>
 <script>
-const ch_names = ["🌡️ Temp", "⚡ VCCINT", "⚡ VCCAUX", "⚡ VCCBRAM"];
+const ch_names = [" Temp", " VCCINT", "VCCAUX", " VCCBRAM"];
 const canvas = document.getElementById('scope');
 const ctx = canvas.getContext('2d');
 
