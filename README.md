@@ -1,9 +1,4 @@
 # PHD-FINAL-PROJECT
-Oscilloscope with esp32 and ARTX-7 100T
-
-Here's a concise README for your project:
-
----
 
 # FPGA + ESP32 Oscilloscope
 
