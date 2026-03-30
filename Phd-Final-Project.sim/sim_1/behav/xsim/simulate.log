@@ -1,0 +1,50 @@
+Time resolution is 1 ps
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance tb_top.dut.xadc_inst.inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+=== UART Testbench starting ===
+CLK = 100 MHz  BAUD_DIV = 868  baud rate ~ 115207 bps
+PASS  Test 1: idle line is high (correct UART idle state)
+--- Test 2: receive frame on channel 0 (default) ---
+PASS  sync byte 0 = AA
+PASS  sync byte 1 = 55
+INFO  channel=0  raw=0x0000  raw12=0
+PASS  Test 2: channel 0 confirmed
+--- Test 3: press button 1 → switch to channel 1 ---
+INFO  pressing button 1
+ERROR: stop bit not 1 at time 10526625000
+ERROR: stop bit not 1 at time 10622115000
+INFO  flushed one frame after button press
+FAIL  sync byte 0: expected AA, got 55 at 11368725000
+FAIL  sync byte 1: expected 55, got 01 at 11368725000
+INFO  channel=0  raw=0x00aa  raw12=10
+FAIL  Test 3: expected ch=1, got ch=0
+--- Test 4: press button 2 → switch to channel 2 ---
+INFO  pressing button 2
+ERROR: stop bit not 1 at time 21456505000
+ERROR: stop bit not 1 at time 21551995000
+INFO  flushed one frame after button press
+FAIL  sync byte 0: expected AA, got 02 at 22307285000
+FAIL  sync byte 1: expected 55, got 00 at 22307285000
+INFO  channel=0  raw=0xaa55  raw12=2725
+FAIL  Test 4: expected ch=2, got ch=0
+--- Test 5: press button 3 → switch to channel 3 ---
+INFO  pressing button 3
+ERROR: stop bit not 1 at time 32403745000
+INFO  flushed one frame after button press
+FAIL  sync byte 0: expected AA, got 00 at 33245845000
+FAIL  sync byte 1: expected 55, got 00 at 33245845000
+INFO  channel=2  raw=0x5503  raw12=1360
+FAIL  Test 5: expected ch=3, got ch=2
+--- Test 6: raw value format check ---
+FAIL  sync byte 0: expected AA, got 00 at 33679915000
+FAIL  sync byte 1: expected 55, got 00 at 33679915000
+INFO  channel=2  raw=0x5503  raw12=1360
+INFO  Test 6: lower nibble = 3 (XADC sim model may not zero pad)
+--- Test 7: consecutive frame timing ---
+INFO  inter-frame gap = 434070000 ns (43407 cycles)
+PASS  Test 7: gap is at least one full frame long
+--- Test 8: LED[0] heartbeat ---
+INFO  Test 8: LED[0] stable over short window (expected for 26-bit counter)
+=== Testbench complete ===
+$finish called at time : 34128335 ns : File "C:/Users/ertat/AppData/Roaming/Xilinx/Vivado/Phd-Final-Project/Phd-Final-Project.srcs/sim_1/new/tb_top.v" Line 243
