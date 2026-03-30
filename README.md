@@ -67,19 +67,10 @@ Press the four buttons to switch between different internal sensors:
 ## Files
 - `top.v` – FPGA Verilog code
 - `main.xdc` – FPGA pin constraints
+- `tb_top.v` – Test Bench fro verilog TOP
 - `main.py` – ESP32 MicroPython code
 
 ## Notes
 - The XADC wizard in Vivado must be configured for **single‑channel mode** with **Temperature**, **VCCINT**, **VCCAUX**, and **VCCBRAM** enabled.
 - The UART baud rate is 115200.
 - The web page shows the last 200 samples.
-
-## Future Improvements
-- Add external analog inputs
-- Add MQTT support for IoT
-- Add an OLED display to the ESP32
-- Implement triggering and timebase controls
-
----
-
-Let me know if you want me to add or change anything!
