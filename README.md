@@ -46,10 +46,10 @@ Press the four buttons to switch between different internal sensors:
 
 | Button | Measurement |
 |--------|-------------|
-| BTN0 (North) | Temperature |
-| BTN1 (South) | VCCINT (Core Voltage) |
-| BTN2 (East) | VCCAUX (Auxiliary Voltage) |
-| BTN3 (West) | VCCBRAM (Block RAM Voltage) |
+| BTN0  | Temperature |
+| BTN1  | VCCINT (Core Voltage) |
+| BTN2  | VCCAUX (Auxiliary Voltage) |
+| BTN3  | VCCBRAM (Block RAM Voltage) |
 
 ## LEDs on the Arty A7
 | LED | Function |
