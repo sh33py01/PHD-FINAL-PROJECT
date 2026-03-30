@@ -37,7 +37,7 @@ mpremote connect COM5 exec "exec(open('main.py').read())"
 Replace `COM5` with your ESP32's serial port.
 
 ### 3. Connect to the Web Interface
-- The ESP32 creates a WiFi access point: **ERTA_SCOPE**
+- The ESP32 creates a WiFi access point: **FPGA_SCOPE**
 - Password: **12345678**
 - Open a browser and go to **http://192.168.4.1**
 
